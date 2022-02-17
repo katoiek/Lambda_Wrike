@@ -2,7 +2,7 @@ import json
 import urllib.request
 from pprint import pprint
 
-permanent_token='こちらにWrikeより発行した永続トークンを入力してください'
+permanent_token='こちらにWrikeより発行した永続トークンを入力してください replace the parmanent token created in Wrike'
 url = 'https://www.wrike.com/api/v4/tasks'
 header ={ 'Authorization': 'bearer '+ permanent_token}
 #method = 'Get'
