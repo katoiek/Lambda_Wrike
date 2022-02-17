@@ -12,9 +12,9 @@ def lambda_handler(event, context):
     
     with urllib.request.urlopen(req) as res:
     # resは http.client.HTTPResponse
-        body = json.loads(res.read().decode('utf8')) # レスポンスボディ
-        headers = res.getheaders() # ヘッダー(dict)
-        status = res.getcode() # ステータスコード
+        body = json.loads(res.read().decode('utf8')) # レスポンスボディ response body
+        headers = res.getheaders() # ヘッダー(dict) header(dict)
+        status = res.getcode() # ステータスコード status code
         #pprint(header)
         #pprint(status)
         pprint(body)
